@@ -17,29 +17,22 @@ public class User implements Serializable {
         private String firstLastName;
         private String secondLastName;
         private String email;
-        private String personalEmail;
-        private int phone;
         private int cellphone;
-        private String workArea;
-        private String position;
 
         public User(){
 
         }
 
         public User(String userId, String firstName, String secondName, String firstLastName, String secondLastName,
-                    String email, String personalEmail, int phone, int cellphone, String workArea, String position) {
+                    String email,int cellphone) {
             this.userId = userId;
             this.firstName = firstName;
             this.secondName = secondName;
             this.firstLastName = firstLastName;
             this.secondLastName = secondLastName;
             this.email = email;
-            this.personalEmail = personalEmail;
-            this.phone = phone;
             this.cellphone = cellphone;
-            this.workArea = workArea;
-            this.position = position;
+
         }
 
 
@@ -99,22 +92,6 @@ public class User implements Serializable {
         this.email = email;
     }
 
-    public String getPersonalEmail() {
-        return personalEmail;
-    }
-
-    public void setPersonalEmail(String personalEmail) {
-        this.personalEmail = personalEmail;
-    }
-
-    public int getPhone() {
-        return phone;
-    }
-
-    public void setPhone(int phone) {
-        this.phone = phone;
-    }
-
     public int getCellphone() {
         return cellphone;
     }
@@ -123,19 +100,4 @@ public class User implements Serializable {
         this.cellphone = cellphone;
     }
 
-    public String getWorkArea() {
-        return workArea;
-    }
-
-    public void setWorkArea(String workArea) {
-        this.workArea = workArea;
-    }
-
-    public String getPosition() {
-        return position;
-    }
-
-    public void setPosition(String position) {
-        this.position = position;
-    }
 }
